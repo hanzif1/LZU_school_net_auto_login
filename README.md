@@ -4,4 +4,4 @@
 
 3.更改chromedriver的路径为自己的,chromedriver文件夹放到chrome安装目录下，如"C:\Program Files\Google\Chrome\Application\chromedriver-win64"
 
-如果提示Chrome内核识别失败，需要检查自己的Chrome版本并去[https://github.com/hanzif1/LZU_school_net_auto_login](https://googlechromelabs.github.io/chrome-for-testing/#stable) 找到属于自己的版本后用wget下载解压。
+如果提示Chrome内核识别失败，需要检查自己的Chrome版本并去[Chrome for Testing availability](https://googlechromelabs.github.io/chrome-for-testing/#stable) 找到属于自己的版本后用wget下载解压。
