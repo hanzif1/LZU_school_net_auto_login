@@ -10,7 +10,7 @@ import subprocess
 from requests.exceptions import ReadTimeout
 
 # 用户名和密码变量
-username = "zhanghao@lzu.edu.cn"
+username = "zhanghao"  #不需要@lzu.edu.cn后缀
 password = "mima"
 # 设置Chrome驱动路径
 chrome_driver_paths = r'C:\Program Files\Google\Chrome\Application\chromedriver-win64\chromedriver.exe'  # 替换为实际的chromedriver路径
@@ -165,7 +165,10 @@ while True:
             print("连接失败/不稳定，开始执行自动登录脚本。")
             auto_login()
         else:
-            print("连接成功，一切正常。")
+            current_ssid = get_current_ssid()
+            if current_ssid not in ["LZU", "iLZU"]:
+                print("无需连接校园网。")
+                exit()
 
         print(f"[{time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())}] 等待5分钟后进行下一次检查...")
         time.sleep(300)
