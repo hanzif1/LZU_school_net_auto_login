@@ -5,7 +5,7 @@ title Auto Login Watcher
 set SCRIPT_NAME="E:\LZU-auto_login-main\auto_login.bat"
 
 :: …Ë÷√ºÏ≤Èº‰∏Ù£®√Î£©
-set CHECK_INTERVAL=60
+set CHECK_INTERVAL=300
 
 :CHECK_LOOP
 :: -----------------------------------------------------------------
